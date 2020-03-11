@@ -14,7 +14,7 @@ build:
 deploy:
 - provider: GitHub
   auth_token:
-    secure: wNHfZ6TDTaosMROTCakwcBpfd97P4wMBqgjNoD/QQrBUL/Ql8m5fBJP8q72B3iDB
+    secure: w6EUsi7JkmLs/sFZ9j/M0ue9J2dqLDQQOVN2+qcaH2/sEmC9Cc5AdBWwfs+aalC7
 platform:
   - x64
 
