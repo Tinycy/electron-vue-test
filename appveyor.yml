@@ -7,13 +7,11 @@ branches:
     - master
 
 image: Visual Studio 2019
-environment:
-  my_variable:
-    secure: K/VxRcmEY1TJvlfTKzEMICX15AV6BrJjIDKeLjhndbH02UlJI8EGnC4DYOLSO/Jc
+
 deploy:
 - provider: GitHub
   auth_token:
-    secure: ftK+Cr0C477eviUo3/2MN+NKbE+h6JNkIkjBeVTWcfLUvB7eesLXHGRBJJ3NTcbztwWb86snYCh5npCm90LQCPKWn85v5wkUcpInLhQ1fm0=
+    secure: K/VxRcmEY1TJvlfTKzEMICX15AV6BrJjIDKeLjhndbH02UlJI8EGnC4DYOLSO/Jc
   draft: true
 platform:
   - x64
