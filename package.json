@@ -4,7 +4,7 @@
   "detail":"服务监测",
   "author": "Tinycy <839435033@qq.com>",
   "description": "An electron-vue project",
-  "license": null,
+  "license": "MIT",
   "main": "./dist/electron/main.js",
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
@@ -124,7 +124,7 @@
     "mocha": "^5.2.0",
     "multispinner": "^0.2.1",
     "node-loader": "^0.6.0",
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.13.1",
     "require-dir": "^1.0.0",
     "sass-loader": "^7.0.3",
     "spectron": "^3.8.0",
