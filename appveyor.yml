@@ -31,14 +31,3 @@ build_script:
   - yarn build
 
 test: off
-configuration: Release
-platform: Any CPU
-environment:
-  GH_TOKEN: 14b5e27d3a1d676469aff10cd0eb3435bede5f4a
-build:
-  verbosity: minimal
-deploy:
-- provider: GitHub
-  auth_token:
-    secure: iLm0BKmUnAc4Yvp8Z3zx3bzjblpZ3IIOuiZ3ueHXWMC4hmmlWEY6GzY7MqXIsX34
-  draft: true
