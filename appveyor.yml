@@ -6,7 +6,15 @@ branches:
   only:
     - master
 
-image: Visual Studio 2017
+image: Visual Studio 2019
+environment:
+  GH_TOKEN: 473c59ddabbac1142c6f63c102d0884ca6318a6c
+build:
+  verbosity: minimal
+deploy:
+- provider: GitHub
+  auth_token:
+    secure: wNHfZ6TDTaosMROTCakwcBpfd97P4wMBqgjNoD/QQrBUL/Ql8m5fBJP8q72B3iDB
 platform:
   - x64
 
