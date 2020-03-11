@@ -7,7 +7,9 @@ branches:
     - master
 
 image: Visual Studio 2019
-
+environment:
+  my_variable:
+    secure: K/VxRcmEY1TJvlfTKzEMICX15AV6BrJjIDKeLjhndbH02UlJI8EGnC4DYOLSO/Jc
 platform:
   - x64
 
