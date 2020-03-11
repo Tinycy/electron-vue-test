@@ -4,10 +4,9 @@ import {
 	BrowserWindow,
 	Menu,
 	Tray,
-	dialog,
-	ipcMain
+	dialog
 } from 'electron'
-'use strict'
+
 const path = require('path')
 
 if (process.mas) app.setName('data monitor')
@@ -79,7 +78,6 @@ function createWindow() {
 		minWidth: 1024,
 		height: 750,
 		minHeight: 750,
-		 frame: true,
 		title: app.getName(),
 		autoHideMenuBar: true,
 		backgroundColor: 'white',
@@ -89,9 +87,6 @@ function createWindow() {
 			nodeIntegration: true
 		}
 	}
-	/*
-		Initial window options
-	*/
 	mainWindow = new BrowserWindow(windowOptions)
 
 	mainWindow.loadURL(winURL)

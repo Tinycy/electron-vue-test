@@ -22,18 +22,13 @@
 			const _this = this
 			setTimeout(function() {
 				_this.loading = false;
-			}, 500);
-			
-		},
-		beforeDestroy() {
+			},500);
 			
 		},
 		methods: {
-			
 			open() {
 				this.$message('这是一条消息提示')
 			},
-
 			openVn() {
 				const h = this.$createElement
 				this.$message({
