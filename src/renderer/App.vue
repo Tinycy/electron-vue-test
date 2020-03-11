@@ -22,8 +22,7 @@
 			const _this = this
 			setTimeout(function() {
 				_this.loading = false;
-			},500);
-			
+			}, 500)
 		},
 		methods: {
 			open() {
