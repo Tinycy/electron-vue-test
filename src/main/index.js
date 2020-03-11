@@ -9,7 +9,6 @@ import {
 } from 'electron'
 'use strict'
 const path = require('path')
-import fs from 'fs'
 
 if (process.mas) app.setName('data monitor')
 /**
@@ -36,7 +35,7 @@ function createWindow() {
 		{
 			label: '设置',
 			click: function() {
-				mainWindow.show();
+				// mainWindow.show();
 			}
 		},
 		{
@@ -127,61 +126,6 @@ app.on('show', () => {
 	appTray.setHighlightMode('always')
 	mainWindow.setSkipTaskbar(false)
 })
-
-// !(function updateHandle () {
-//   let message = {
-//     error: '检查更新出错',
-//     checking: '正在检查更新',
-//     updateAva: '检测到新版本，正在下载...',
-//     updateNotAva: '已经是最新版本!'
-//   }
-//   // autoUpdater.autoDownload = false;//取消自动下载
-//   const uploadUrl = 'http://192.168.20.14:3000/newApp/'
-//   autoUpdater.setFeedURL(uploadUrl)
-//   autoUpdater.on('error', function (error) {
-//     sendUpdateMessage(message.error)
-//   })
-//   autoUpdater.on('checking-for-update', function () {
-//     sendUpdateMessage(message.checking)
-//   })
-//   autoUpdater.on('update-available', function (info) {
-//     sendUpdateMessage(message.updateAva)
-//   })
-//   autoUpdater.on('update-not-available', function (info) {
-//     sendUpdateMessage(message.updateNotAva)
-//   })
-//   // 更新下载进度事件
-//   autoUpdater.on('download-progress', function (progressObj) {
-// 	    mainWindow.webContents.send('downloadProgress', progressObj)
-//   })
-//   autoUpdater.on('update-downloaded', function (event, releaseNotes, releaseName, releaseDate, updateUrl, quitAndUpdate) {
-
-// 	ipcMain.on('isUpdateNow', (e, arg) => {
-// 	        console.log(arguments)
-// 	        console.log('开始更新')
-// 	        // some code here to handle event
-// 	        autoUpdater.quitAndInstall()
-// 			mainWindow.destroy()
-// 	    })
-
-// 	    mainWindow.webContents.send('isUpdateNow')
-//   })
-
-//   ipcMain.on('checkForUpdate', () => {
-// 		console.log('执行自动更新检查')
-// 		// 执行自动更新检查
-// 		autoUpdater.checkForUpdates()
-//   })
-//   ipcMain.on('downloadUpdate', () => {
-//       // 下载
-// 	console.log('执行下载')
-//       autoUpdater.downloadUpdate()
-//     })
-// }())
-// // 通过main进程发送事件给renderer进程，提示更新信息
-// function sendUpdateMessage(text) {
-// 	mainWindow.webContents.send('message', text)
-// }
 /**
  * Auto Updater
  *
