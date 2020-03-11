@@ -31,7 +31,7 @@ let appTray = null;
 function createWindow() {
 	appTray = new Tray(path.join(__static, 'icon.png'))
 	appTray.setTitle('electron-tiny')
-	var moni_menu = Menu.buildFromTemplate([
+	var moniMenu = Menu.buildFromTemplate([
 		{
 			label: '设置',
 			click: function() {
@@ -51,7 +51,7 @@ function createWindow() {
 					},
 					function(index) {
 						if (index === 0) {
-							// mainWindow.minimize();
+							/* mainWindow.minimize();*/
 						} else {
 							mainWindow = null;
 							app.exit();
@@ -69,7 +69,7 @@ function createWindow() {
 			}
 		}
 	])
-	appTray.setContextMenu(moni_menu)
+	appTray.setContextMenu(moniMenu)
 	appTray.on('click', () => {
 
 		mainWindow.show()
@@ -79,7 +79,7 @@ function createWindow() {
 		minWidth: 1024,
 		height: 750,
 		minHeight: 750,
-		// frame: false, //系统自带的菜单栏
+		 frame: true,
 		title: app.getName(),
 		autoHideMenuBar: true,
 		backgroundColor: 'white',
@@ -89,9 +89,9 @@ function createWindow() {
 			nodeIntegration: true
 		}
 	}
-	/**
-	 * Initial window options
-	 */
+	/*
+		Initial window options
+	*/
 	mainWindow = new BrowserWindow(windowOptions)
 
 	mainWindow.loadURL(winURL)
