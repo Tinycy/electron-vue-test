@@ -1,0 +1,61 @@
+@charset 'UTF-8';
+
+.max-min-close{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    fill: #eae8e8;
+    -webkit-app-region: no-drag;  /*很重要，不然无法响应点击*/
+}
+
+.max-min-close:hover{
+    fill: #ffffff;
+}
+
+.logo{
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    fill: #ffffff;
+}
+
+.search{
+    position: absolute;
+    top: 14px;
+    left: 200px;
+    height: 12px;
+    width: 180px;
+    /* 内部文字边距 */
+    padding: 5px 25px 5px 15px; 
+    border: none;
+    /* 圆角 */
+    border-radius: 15px;  
+    font-size: 14px;
+    /* 字体颜色 */
+    color: #ffffff;
+    background-color: rgb(185, 5, 5);
+    -webkit-app-region: no-drag;
+}
+
+.search:focus{
+    /* 输入框选中状态去掉 */
+    outline: none
+}
+
+.search-icon{
+    position: absolute;
+    top: 18px;
+    left: 395px;
+    fill: #e2e2e2;
+    width: 28px;
+    height: 28px;
+    -webkit-app-region: no-drag;
+}
+
+.is-focus{
+    fill: #ffffff;
+}

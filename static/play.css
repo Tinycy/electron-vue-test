@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+.play-last-bg{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #e80303;
+}
+
+.play-last-bg:hover{
+    background-color: #d80000;
+    cursor: pointer;
+}
+
+.play-last{
+    position: absolute;
+    bottom: 12px;
+    left: 22px;
+    width: 26px;
+    height: 26px;
+    fill: #ffffff;
+    pointer-events: none;
+}
+
+.play-bg{
+    position: absolute;
+    bottom: 8px;
+    left: 81px;
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+    background-color: #e80303;
+}
+.play-bg:hover{
+    background-color: #d80000;
+    cursor: pointer;
+}
+
+.play{
+    position: absolute;
+    bottom: 10px;
+    left: 84px;
+    width: 29px;
+    height: 29px;
+    fill: #ffffff;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.play-next-bg{
+    position: absolute;
+    bottom: 10px;
+    left: 145px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #e80303;
+}
+
+.play-next-bg:hover{
+    background-color: #d80000;
+    cursor: pointer;
+}
+.play-next{
+    position: absolute;
+    bottom: 12px;
+    left: 148px;
+    width: 26px;
+    height: 26px;
+    fill: #ffffff;
+    pointer-events: none;
+}
+
+.time-begin{
+    position: absolute;
+    left: 203px;
+    bottom: 15px;
+    color: black;
+    font-size: 80%;
+    user-select: none;
+}
+
+.time-end{
+    position: absolute;
+    right: 305px;
+    bottom: 15px;
+    color: black;
+    font-size: 80%;
+    user-select: none;
+}
+
+.time-bg{
+    position: absolute;
+    left: 245px;
+    right: 344px;
+    bottom: 21px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #c1c1c1;
+}
+.time-front{
+    position: absolute;
+    height: 4px;
+    border-radius: 2px;
+    width: 0px;
+    background-color: red;
+}
+
+.time-slider-bg{
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+    width: 12px;
+    height: 12px;
+    margin: 0px 0px 0px -6px;
+    border-radius: 6px;
+    background-color: white;
+}
+.time-slider{
+    position: absolute;
+    left: 0px;    /*=progress-font.width-2*/
+    bottom: 0px;
+    width: 14px;
+    height: 14px;
+    margin: 0px 0px 0px -6px;  /*margin主要设置左侧距离，是的滑块中心在条的末端*/
+    fill: red;
+}
+.time-slider:hover{
+    cursor: pointer;
+}
+
+.voice{
+    position: absolute;
+    right: 261px;
+    bottom: 15px;
+    width: 18px;
+    height: 18px;
+    fill: rgb(114, 114, 114);
+}
+.voice:hover{
+    fill: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.volume-bg{
+    position: absolute;
+    right: 149px;
+    bottom: 22px;
+    width: 105px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: rgb(161, 161, 161);
+}
+.volume-front{
+    position: absolute;
+    width: 54px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: red;
+}
+.volume-slider-bg{
+    /* volume 滑块 */
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+    width: 10px;
+    height: 10px;
+    margin: 0px 0px 0px -5px;
+    border-radius: 6px;
+    background-color: white;
+}
+.volume-slider{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 12px;
+    height: 12px;
+    margin: 0px 0px 0px -5px;
+    fill: red;
+    pointer-events: none;
+}
+.volume-slider:hover{
+    cursor: pointer;
+}
+
+.play-order{
+    position: absolute;
+    right: 114px;
+    bottom: 13px;
+    width: 20px;
+    height: 20px;
+    fill: rgb(97, 97, 97);
+    visibility: hidden;
+}
+.is-show{
+    visibility: visible;
+}
+.play-order:hover{
+    fill: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.lyrics-btn{
+    position: absolute;
+    right: 79px;
+    bottom: 15px;
+    width: 17px;
+    height: 17px;
+    fill: rgb(70, 70, 70);
+}
+.lyrics-btn:hover{
+    fill: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.play-list-num-bg{
+    position: absolute;
+    right: 18px;
+    bottom: 16px;
+    width: 26px;
+    height: 14px;
+    font-size: 80%;
+    user-select: none;
+    background-color: #dcdcdc;
+    border-radius: 0px 8px 8px 0px;
+    text-align: center;
+}
+.play-list-num{
+    position: absolute;
+    right: 41px;
+    bottom: 15px;
+    width: 17px;
+    height: 17px;
+    fill: rgb(70, 70, 70);
+}
+.play-list:hover{
+    fill: rgb(0, 0, 0);
+    cursor: pointer;
+}

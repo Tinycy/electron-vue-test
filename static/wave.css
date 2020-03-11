@@ -1,0 +1,36 @@
+.wave{
+    position:absolute;
+    top: 20%;
+    left: 10%;
+    width: 295px;
+    height: 295px;
+    border-radius:150px;
+    border: 2px solid;
+    z-index: 1;
+}
+
+.wave0{
+    color: #f19393;
+    -webkit-animation:wave-circle 3s 1s infinite;
+}
+
+.wave1{
+    color: #ecb56d;
+    -webkit-animation:wave-circle 3s 2s infinite;
+}
+
+.wave2{
+    color: #c16cb698;
+    -webkit-animation:wave-circle 3s 3s infinite;
+}
+
+@-webkit-keyframes wave-circle{
+  from {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+  to {
+      opacity: 0;
+      transform: scale(1.3);
+  }
+}

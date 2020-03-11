@@ -1,0 +1,112 @@
+@charset 'UTF-8';
+
+.nav{
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(245, 245, 247, 255);
+    border-right: 1px solid #e0e0e0;
+    height: calc(100% - 59px);
+}
+
+.nav-title{
+    font-weight: 300;
+    line-height: 1;
+    font-size: 12px;
+    padding: 0.8rem 0rem .90rem 0rem;
+    display:block;
+    user-select: none;
+}
+
+.nav-title-text{
+    padding: 0.2rem 0rem .5rem 0.8rem;
+    color: #828282;
+}
+
+.nav-item{
+    display: block;
+    width:100%;
+    padding: 0.4rem 0rem 0.4rem 0.8rem;
+    font-size: 13px;
+    color: #828282;
+    fill: #828282;
+    
+}
+.nav-item-icon{
+    width: 20px;
+    height: 20px;
+    padding-left: 0.4rem;
+    vertical-align:middle;
+}
+
+.nav-item-text{
+    display: inline;   /*  */
+    padding-left: .4rem;
+    vertical-align:middle;
+    user-select: none;
+    overflow: hidden;
+}
+
+.nav-item:hover{
+    color: black;
+    fill: black;
+}
+
+.nav-item.is-selected{
+    color: black;
+    fill: black;
+    background-color: rgba(230, 231, 234, 1);
+}
+
+.nav-play-item{
+    position: absolute;
+    bottom: 0px;
+    width: 199px;
+    height: 58px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+
+.nav-play-item-img{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #e0e0e0;
+}
+.nav-play-item-hoverimg{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 46px;
+    height: 46px;
+    opacity: 0.1;
+}
+.nav-play-item:hover .nav-play-item-hoverimg{
+    opacity: 1;
+}
+.nav-paly-songname{
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    font-size: 75%;
+    line-height: 20px;
+    width: 110px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    user-select: none;
+}
+.nav-paly-singer{
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    font-size: 75%;
+    line-height: 20px;
+    width: 110px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+  

@@ -1,0 +1,107 @@
+@charset 'UTF-8';
+
+.songlist-overview{
+    height: 100%;
+}
+
+.songlist-overview-album{
+    position: absolute;
+    top: 10px;
+    left: 30%;
+    width: 40px;
+    color: #d80000;
+    text-align: center;
+    padding: 5px 10px 8px 10px;
+    border-bottom: solid 2px #d80000;
+    user-select: none;
+}
+
+.songlist-overview-title{
+    position: absolute;
+    top: 10px;
+    width: 60px;
+    color: #535353;
+    text-align: center;
+    padding: 5px 10px 8px 10px;
+    user-select: none;
+}
+
+.songlist-overview-line{
+    position: absolute;
+    top: 44px;
+    left: 30px;
+    right: 30px;
+    border-bottom: solid 1px #bdbdbd;
+}
+
+.songlist-overview-itemframe{
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    right: 0px;
+    margin:auto;
+    width: 760px;
+}
+.songlist-overview-item{
+    position: absolute;
+    margin: 15px 10px 25px;
+    width: 170px;
+    height: 210px;
+}
+.songlist-overview-item:hover{
+    cursor: pointer;
+}
+
+.songlist-overview-item-img{
+    width: 170px;
+    height: 170px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.songlist-overview-item-username{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: white;
+    font-size: 13px;
+    user-select: none;
+}
+.songlist-overview-item-playnum-bg{
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    width: 70px;
+    height: 20px;
+    background-color: #060606;
+    opacity: 0.3;
+}
+.songlist-overview-item-playnum-text{
+    position: absolute;
+    right: 5px;
+    top: 150px;
+    color: white;
+    font-size: 13px;
+    line-height: 24px;
+    user-select: none;
+}
+
+.songlist-overview-item-playimg{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 170px;
+    height: 170px;
+    background-color: #bdbdbd;
+    opacity: 0;
+}
+.songlist-overview-item-playimg:hover{
+    opacity: 0.3;
+}
+
+.songlist-overview-item-title{
+    position: absolute;
+    left: 0px;
+    top: 180px;
+    user-select: none;
+}
