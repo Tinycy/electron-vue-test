@@ -2,28 +2,12 @@
 # https://simulatedgreg.gitbooks.io/electron-vue/content/en/testing.html#on-the-subject-of-ci-testing
 version: 1.0.{build}
 
+branches:
+  only:
+    - master
+
 image: Visual Studio 2019
 
-configuration: Release
-
-platform: Any CPU
-
-environment:
-
-GH_TOKEN: fd3fd9739c0fd55af0697c745ff732636789db65
-  
-build:
-
-verbosity: minimal
-  
-deploy:
-
-- provider: GitHub
-
-auth_token:
-  
-secure: w6EUsi7JkmLs/sFZ9j/M0ue9J2dqLDQQOVN2+qcaH2/sEmC9Cc5AdBWwfs+aalC7
-	
 platform:
   - x64
 
