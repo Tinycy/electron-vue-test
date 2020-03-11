@@ -1,6 +1,6 @@
 {
   "name": "tiny",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "detail":"服务监测",
   "author": "Tinycy <839435033@qq.com>",
   "description": "An electron-vue project",
