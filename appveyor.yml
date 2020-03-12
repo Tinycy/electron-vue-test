@@ -11,7 +11,7 @@ image: Visual Studio 2019
 deploy:
 - provider: GitHub
   auth_token:
-    secure: K/VxRcmEY1TJvlfTKzEMICX15AV6BrJjIDKeLjhndbH02UlJI8EGnC4DYOLSO/Jc
+    secure: ef0315d2d357a469ec4d644d02ce0b1861d55d8c
   draft: true
 platform:
   - x64
