@@ -8,6 +8,9 @@ branches:
 
 image: Visual Studio 2019
 
+environment:
+  my_variable:
+    secure: oZFOTn9oaOfls7uBpy/gO96uQwzEirdCPquARF18fFYPehipsoymIhn5zVzK9lRG
 platform:
   - x64
 
